@@ -27,15 +27,5 @@ jobs:
           path: docs/_build/html
           if-no-files-found: error
           retention-days: 7
-      - name: Comment link to the run (same-repo PRs only)
-        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const url = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${process.env.GITHUB_RUN_ID}`;
-            github.rest.issues.createComment({
-              ...context.repo,
-              issue_number: context.issue.number,
-              body: `✅ Preview built. Download the **site-preview** artifact from this run:\n\n${url}`
-            });
+
 
