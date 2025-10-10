@@ -6,7 +6,7 @@ root: intro
 parts:
   - caption: News
     chapters:
-      - file: 5.00_1.2_release_notes
+      - file: 5.00_1.4_release_notes
       - file: 0.1_2025_MLSchool
       #- file: 0.1_2024_MLSchool
       #- file: 0.1_2023_MLSchool
