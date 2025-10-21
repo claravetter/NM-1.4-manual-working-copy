@@ -49,6 +49,8 @@ parts:
       - file: 4.4_mainmenu_preprocess_features
       - file: 4.5_mainmenu_train_supervised_classifiers
       - file: 4.6_mainmenu_visualize_classifiers
+        sections:
+          - file: 4.6.11.visualization_pathways_backprojection
       - file: 4.14_mainmenu_interprete_classifiers
       - file: 4.7_mainmenu_display_training_results
         sections:
